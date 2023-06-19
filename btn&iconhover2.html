@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* all btn  */
+        .btn,
+        .btn2,
+        .btn3,
+        .btn4,
+        .btn5 {
+            text-decoration: none;
+            border: 1px solid;
+            padding: 10px;
+            margin-top: 10px;
+            position: relative;
+            transition: all .5s linear;
+
+        }
+
+        /* btn1 */
+        .btn::after {
+            background-color: red;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            transition: all .3s linear;
+            z-index: -1;
+
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        .btn:hover::after {
+            width: 100%;
+        }
+
+        /* btn2 */
+
+        .btn2::after {
+            background-color: red;
+            content: "";
+            width: 100%;
+            height: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .3s linear;
+            z-index: -1;
+        }
+
+        .btn2:hover::after {
+            height: 100%;
+        }
+
+        .btn2:hover {
+            color: white;
+        }
+
+        /* btn3 */
+
+        .btn3::after {
+            background-color: red;
+            content: "";
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: all .3s linear;
+            z-index: -1;
+        }
+
+        .btn3:hover::after {
+            width: 100%;
+        }
+
+        .btn3:hover {
+            color: white;
+        }
+              
+        /* btn4 */
+
+        .btn4::after {
+            background-color: red;
+            content: "";
+            width: 100%;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .3s linear;
+            z-index: -1;
+        }
+
+        .btn4:hover::after {
+            height: 100%;
+        }
+
+        .btn4:hover {
+            color: white;
+        }
+
+       /* btn5 */
+        
+        .btn5::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .3s linear;
+            z-index: -1;
+
+        }
+
+        .btn5:hover::after {
+            background-color: red;
+        }
+
+        .btn5:hover {
+            color: white;
+        }
+
+           /* btn start */
+        
+        .btn6,
+        .btn7,
+        .btn8,
+        .btn9,
+        .btn10 {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid;
+            padding: 10px;
+
+
+
+        }
+        
+           /* btn 6 */
+
+        .btn6::before {
+            content: "";
+            bottom: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: black;
+            z-index: -1;
+            transition: all 0.2s linear;
+        }
+
+        .btn6:hover::before {
+            bottom: -100%;
+        }
+
+        .btn6:hover {
+            color: black;
+        }
+
+           /* btn7*/
+
+        .btn7::before {
+            content: "";
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: black;
+            z-index: -1;
+            transition: all 0.2s linear;
+        }
+
+        .btn7:hover::before {
+            top: -100%;
+        }
+
+        .btn7:hover {
+            color: black;
+        }
+
+
+           /* btn8 */
+
+        .btn8::before {
+            content: "";
+            bottom: 0px;
+            right: 0px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: black;
+            z-index: -1;
+            transition: all 0.2s linear;
+        }
+
+        .btn8:hover::before {
+            right: -100%;
+        }
+
+        .btn8:hover {
+            color: black;
+        }
+
+           /* btn9 */
+
+        .btn9::before {
+            content: "";
+            bottom: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: black;
+            z-index: -1;
+            transition: all 0.2s linear;
+        }
+
+        .btn9:hover::before {
+            left: -100%;
+        }
+
+        .btn9:hover {
+            color: black;
+        }
+        
+           /* btn 10 */
+
+        .btn10::before {
+            content: "";
+            bottom: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: black;
+            z-index: -1;
+            transition: all 0.2s linear;
+        }
+
+        .btn10:hover::before {
+            background-color: white;
+        }
+
+        .btn10:hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <a href="" class="btn">HOVER ME</a>
+        <a href="" class="btn2">HOVER ME</a>
+        <a href="" class="btn3">HOVER ME</a>
+        <a href="" class="btn4">HOVER ME</a>
+        <a href="" class="btn5">HOVER ME</a>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 50px
+    ;">
+        <a href="" class="btn6">HOVER ME</a>
+        <a href="" class="btn7">HOVER ME</a>
+        <a href="" class="btn8">HOVER ME</a>
+        <a href="" class="btn9">HOVER ME</a>
+        <a href="" class="btn10">HOVER ME</a>
+    </div>
+</body>
+
+</html>
